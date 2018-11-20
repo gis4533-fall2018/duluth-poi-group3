@@ -40,10 +40,10 @@
     <script>
         // add map
         const map = L.map('map', {
-          center: [45.52, -122.667],
+          center: [45.52, -100.667],
           zoom: 3
         });
-        // add basemap
+        // add streets basemap
         const esriStreets = L.esri.basemapLayer('Streets').addTo(map);
         // add hosted feature layer of Duluth Points of interest
         const duluthpoi = L.esri.featureLayer({url: 'https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/Duluth_Points_of_Interest_group3/FeatureServer/0?token=NWcTiaLuPtxvFSreO8tYrMLlFK6ztZTarVvPFr_gAseMTiOQSnzJ1LIsPkb0hzG9pbd-WTsls-EhvXxcmvoBRAq-oC_8DOl2LCGYaCgGLsPZAVLYUQlKVc74-2G69oOtd2Zx2bSySSRxL8bByBeC8VOtZJRmV-9Ls7B0NlWMPlRXg5n4LAVdEqlXRk7J_oVe6_qz8gKgMnSKjpXfY6VOqfclS9Do_T3asZRu4Zz1689I-gfLygW0OpaaEPTTPwR5'}).addTo(map);
